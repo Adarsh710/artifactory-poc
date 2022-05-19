@@ -8,6 +8,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.bundle.js',
+    libraryTarget: 'umd',
+    library: 'artifactory-poc',
   },
   target: 'web',
   resolve: {
