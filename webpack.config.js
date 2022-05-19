@@ -1,17 +1,12 @@
-const webpack = require('webpack');
-const deps = require('./package.json').dependencies;
 const path = require('path');
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: path.resolve(__dirname, 'src/index.js'),
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.bundle.js',
-    libraryTarget: 'umd',
-    library: 'artifactory-poc',
   },
-  target: 'web',
   resolve: {
     extensions: ['.js', '.jsx'],
   },
