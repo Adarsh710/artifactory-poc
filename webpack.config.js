@@ -3,9 +3,12 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   entry: path.resolve(__dirname, 'src/index.js'),
+  devtool: false,
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'index.bundle.js',
+    filename: 'index.js',
+    libraryTarget: 'umd',
+    library: 'artifactory-poc',
   },
   resolve: {
     extensions: ['.js', '.jsx'],

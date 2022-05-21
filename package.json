@@ -2,7 +2,7 @@
   "name": "artifactory-poc",
   "version": "1.0.0",
   "description": "A POC for publishing our code as package in npm artifactory.",
-  "main": "dist/index.bundle.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js"
   },
@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/ajhunny/artifactory-poc#readme",
   "dependencies": {
+    "@babel/cli": "^7.17.10",
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.60",
+    "cross-env": "^7.0.3",
     "react": "16.14",
     "react-dom": "16.14",
     "webpack": "^5.72.1",
@@ -27,7 +29,10 @@
   },
   "peerDependencies": {
     "react": "16.14",
-    "react-dom": "16.14"
+    "react-dom": "16.14",
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60"
   },
   "devDependencies": {
     "@babel/core": "^7.17.12",
@@ -41,5 +46,8 @@
     "sass-loader": "^13.0.0",
     "style-loader": "^3.3.1",
     "url-loader": "^4.1.1"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
