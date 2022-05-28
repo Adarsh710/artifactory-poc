@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, CircularProgress } from '@material-ui/core';
+import { Button, CircularProgress } from '@mui/material';
 
 const PrimaryButton = ({
   variant = 'contained',

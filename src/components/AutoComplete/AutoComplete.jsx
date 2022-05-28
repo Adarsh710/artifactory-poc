@@ -1,6 +1,5 @@
 import React from 'react';
-import { TextField, InputLabel } from '@material-ui/core';
-import { Autocomplete } from '@material-ui/lab';
+import { TextField, InputLabel, Autocomplete } from '@mui/material';
 
 const AutoComplete = ({
   id,
